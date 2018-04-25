@@ -32,7 +32,7 @@ int main(void)
 void filestat1(void)
 {
 	stat("text1", &stat1);
-	if(stat1!=NULL)
+	if(stat1.st_size != NULL)
 		printf("error! file is empty!");
 }
 
@@ -40,7 +40,7 @@ void filestat1(void)
 void filestat2(void)
 {
 	stat("text2", &stat2);
-	if(stat2!=NULL)
+	if(stat2.st_size != NULL)
 		printf("error! file is empty!");
 }
 
