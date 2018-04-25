@@ -32,16 +32,16 @@ int main(void)
 void filestat1(void)
 {
 	stat("text1", &stat1);
-	if(stat1!=NULL)
-		printf("error! file is empty!");
+	if(stat1.st_size == NULL)
+		printf("error! file is empty! \n");
 }
 
 //파일 2의 정보를 가져오는 함수 작성
 void filestat2(void)
 {
 	stat("text2", &stat2);
-	if(stat2!=NULL)
-		printf("error! file is empty!");
+	if(stat2.st_size == NULL)
+		printf("error! file is empty! \n");
 }
 
 //파일 1의 시간 정보를 가져오는 함수 작성
